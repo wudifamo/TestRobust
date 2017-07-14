@@ -4,23 +4,20 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-import com.meituan.robust.patch.annotaion.Add;
-import com.meituan.robust.patch.annotaion.Modify;
-
 public class SecondActivity extends AppCompatActivity {
 
 	@Override
-	@Modify
+//	@Modify
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_second);
 		TextView textView2 = (TextView) findViewById(R.id.textView2);
 		textView2.setText("1132132131");
-		textView2.setText(getInfo());
+//		textView2.setText(getInfo());
 	}
 
-	@Add
-	public String getInfo(){
-		return "aaaaaaaa";
-	}
+//	@Add
+//	public String getInfo(){
+//		return "aaaaaaaa";
+//	}
 }
